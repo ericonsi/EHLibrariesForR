@@ -5,5 +5,5 @@ EH_RemoveOutliersBasedOnQuartile <- function(dframe, col)
   iqr <- IQR(col)
   NewDataFrame<- subset(dframe, col> (Q[1] - 1.5*iqr) & col < (Q[2]+1.5*iqr))
   return(NewDataFrame)
-  print("dudes!")
+  print("Ouliers Removed.")
 }
