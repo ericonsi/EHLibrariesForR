@@ -1,5 +1,5 @@
 
-#' @export
+#Needs Work -
 EH_OutlierBoxplotIt_Horizontal <-function(dataframe, colWithOutliers, colWithCategories)
 {
   q1<-ggplot(dataframe, aes(x=colWithCategories, y=colWithOutliers)) +
